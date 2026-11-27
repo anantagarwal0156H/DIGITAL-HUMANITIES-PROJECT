@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Digital Humanities project on inequality, participation and belonging in college social life." />
+  <title>Same Campus, Unequal Beginnings</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</head>
+<body>
+  <div class="synthetic-banner">
+    SYNTHETIC PILOT DATASET — 200 modelled records used to demonstrate the research design. These are not claimed as real survey responses.
+  </div>
+
+  <header class="hero">
+    <nav class="nav shell">
+      <div class="brand">SCUB / DH</div>
+      <div class="nav-links">
+        <a href="#question">Question</a>
+        <a href="#network">Network</a>
+        <a href="#patterns">Patterns</a>
+        <a href="#method">Method</a>
+        <a href="#files">Files</a>
+      </div>
+    </nav>
+
+    <div class="hero-inner shell">
+      <p class="eyebrow">DIGITAL HUMANITIES · CAMPUS SOCIAL LIFE</p>
+      <h1>Same campus.<br><span>Unequal beginnings.</span></h1>
+      <p class="hero-copy">
+        Does college act as a social equalizer, or do differences in spending power, prior exposure and regional context continue to shape who participates, who connects and who feels that they belong?
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#network">Explore the network</a>
+        <a class="button ghost" href="#method">See the method</a>
+      </div>
+      <div class="hero-stats" id="heroStats"></div>
+    </div>
+  </header>
+
+  <main>
+    <section id="question" class="section shell">
+      <div class="section-kicker">01 / THE QUESTION</div>
+      <div class="split">
+        <div>
+          <h2>Three inequalities. One social outcome.</h2>
+        </div>
+        <div class="lead-stack">
+          <p>Students enter the same institution with different starting conditions. This project treats inequality not as one variable, but as three connected dimensions.</p>
+          <p>The question is not simply whether inequality exists. It is whether campus life reproduces these differences, reduces them, or does both depending on the type of social activity.</p>
+        </div>
+      </div>
+      <div class="dimension-grid">
+        <article class="dimension-card">
+          <div class="dimension-number">A</div>
+          <h3>Spending power</h3>
+          <p>Can a student afford the meals, cafés, travel and outings through which some friendships are built?</p>
+        </article>
+        <article class="dimension-card">
+          <div class="dimension-number">B</div>
+          <h3>Prior exposure</h3>
+          <p>How familiar is a student with clubs, mixed social groups, competitions, travel and unfamiliar social situations?</p>
+        </article>
+        <article class="dimension-card">
+          <div class="dimension-number">C</div>
+          <h3>Regional context</h3>
+          <p>How different does campus social life feel from the language, norms and social context a student came from?</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section dark-band">
+      <div class="shell">
+        <div class="section-kicker light">02 / WORKING READING</div>
+        <div class="finding-grid" id="findingGrid"></div>
+      </div>
+    </section>
+
+    <section id="network" class="section shell wide-section">
+      <div class="section-kicker">03 / PARTICIPATION NETWORK</div>
+      <div class="split network-intro">
+        <div>
+          <h2>Who connects to which social spaces?</h2>
+        </div>
+        <div class="lead-stack">
+          <p>Students are shown as small nodes. Social activities are larger nodes. A line appears when a student participates in that activity; thicker lines indicate higher reported frequency.</p>
+          <p>This is a bipartite network: it maps access to social opportunities rather than claiming direct friendship ties.</p>
+        </div>
+      </div>
+
+      <div class="network-layout">
+        <aside class="filters panel">
+          <h3>Filter students</h3>
+          <label>Region
+            <select id="regionFilter">
+              <option value="all">All regions</option>
+              <option>Metropolitan</option>
+              <option>Large city</option>
+              <option>Small town</option>
+              <option>Rural</option>
+            </select>
+          </label>
+          <label>Academic year
+            <select id="yearFilter">
+              <option value="all">All years</option>
+              <option value="1">Year 1</option>
+              <option value="2">Year 2</option>
+              <option value="3">Year 3</option>
+              <option value="4">Year 4</option>
+            </select>
+          </label>
+          <label>Spending power
+            <select id="spendFilter">
+              <option value="all">All scores</option>
+              <option value="1">1 — lowest</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5 — highest</option>
+            </select>
+          </label>
+          <button class="button small" id="resetFilters">Reset filters</button>
+
+          <div class="filter-kpis">
+            <div><span id="visibleCount">0</span><small>students shown</small></div>
+            <div><span id="visibleBelonging">0</span><small>avg belonging</small></div>
+          </div>
+
+          <div class="legend">
+            <h4>Student colour</h4>
+            <div><i class="dot metro"></i> Metropolitan</div>
+            <div><i class="dot city"></i> Large city</div>
+            <div><i class="dot town"></i> Small town</div>
+            <div><i class="dot rural"></i> Rural</div>
+            <h4>Activity border</h4>
+            <div><i class="box free"></i> Free</div>
+            <div><i class="box low"></i> Low cost</div>
+            <div><i class="box paid"></i> Paid</div>
+          </div>
+        </aside>
+
+        <div class="network-panel panel">
+          <div id="networkViz" class="viz"></div>
+          <div id="tooltip" class="tooltip"></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="patterns" class="section soft-section">
+      <div class="shell">
+        <div class="section-kicker">04 / PATTERNS</div>
+        <h2>Where inequality remains, and where campus life appears to narrow it.</h2>
+        <div class="chart-grid">
+          <article class="chart-card">
+            <div class="chart-head">
+              <span>SPENDING POWER</span>
+              <h3>Paid vs free participation</h3>
+            </div>
+            <div id="spendingChart" class="chart"></div>
+            <p class="chart-note">If the gap is much larger for paid activities than free activities, cost is shaping participation rather than social motivation alone.</p>
+          </article>
+
+          <article class="chart-card">
+            <div class="chart-head">
+              <span>PRIOR EXPOSURE</span>
+              <h3>Initial vs current comfort</h3>
+            </div>
+            <div id="exposureChart" class="chart"></div>
+            <p class="chart-note">The gap in initial comfort is large. Current comfort improves across groups, showing adaptation without complete equalization.</p>
+          </article>
+
+          <article class="chart-card full">
+            <div class="chart-head">
+              <span>REGIONAL CONTEXT</span>
+              <h3>How social comfort changes after entering college</h3>
+            </div>
+            <div id="regionChart" class="chart large"></div>
+            <p class="chart-note">The comparison is descriptive. Region is a proxy for context, not a causal explanation for any individual student.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="method" class="section shell">
+      <div class="section-kicker">05 / METHOD</div>
+      <div class="split">
+        <div><h2>From questionnaire to network.</h2></div>
+        <div class="lead-stack"><p>The research design is built backwards from the visualizations. Every survey variable exists because it answers part of the central question or creates an interpretable network edge.</p></div>
+      </div>
+
+      <ol class="method-list">
+        <li><strong>Measure starting conditions.</strong><span>Region type, spending power, prior exposure, initial social comfort and context gap.</span></li>
+        <li><strong>Measure social access.</strong><span>Frequency of participation in ten campus and off-campus activity types.</span></li>
+        <li><strong>Measure outcomes.</strong><span>Current comfort, friend-group diversity, social circle size and belonging.</span></li>
+        <li><strong>Construct the network.</strong><span>Each student is connected to every activity they report participating in. Frequency becomes edge weight.</span></li>
+        <li><strong>Compare groups.</strong><span>Paid/free participation by spending power, social comfort by exposure and region, and adaptation by year.</span></li>
+      </ol>
+
+      <div class="method-note">
+        <strong>Important limitation</strong>
+        <p>The bundled dataset is synthetic and exists only to demonstrate the workflow. It can be replaced with real anonymous responses using the same column names. Findings on this page therefore demonstrate what the method can reveal; they are not empirical claims about a real student population.</p>
+      </div>
+    </section>
+
+
+    <section id="files" class="section shell">
+      <div class="section-kicker">06 / PROJECT FILES</div>
+      <div class="split">
+        <div><h2>Open the research package.</h2></div>
+        <div class="lead-stack"><p>The report framework, Excel workbook, Gephi network files and questionnaire are stored with this website in the same GitHub repository.</p></div>
+      </div>
+      <div class="resource-grid">
+        <a class="resource-card" href="project-files/Report_Framework.pdf" target="_blank"><strong>Report framework</strong><span>PDF · rubric-aligned with screenshot slots</span></a>
+        <a class="resource-card" href="project-files/Synthetic_Data_and_Analysis.xlsx"><strong>Data + analysis</strong><span>Excel · 200-row synthetic pilot dataset</span></a>
+        <a class="resource-card" href="project-files/network_nodes.csv"><strong>Gephi nodes</strong><span>CSV · node table</span></a>
+        <a class="resource-card" href="project-files/network_edges.csv"><strong>Gephi edges</strong><span>CSV · edge table</span></a>
+        <a class="resource-card" href="project-files/REAL_SURVEY_QUESTIONNAIRE.md" target="_blank"><strong>Questionnaire</strong><span>Markdown · real anonymous survey design</span></a>
+        <a class="resource-card" href="project-files/DEPLOYMENT_AND_GEPHI.md" target="_blank"><strong>Method notes</strong><span>Markdown · deployment + Gephi steps</span></a>
+      </div>
+    </section>
+
+    <section class="section conclusion-band">
+      <div class="shell conclusion-wrap">
+        <div class="section-kicker light">07 / WHAT THIS MODEL SUGGESTS</div>
+        <h2>College can be an equalizer without being an equal starting point.</h2>
+        <p>In the synthetic model, spending power continues to shape access to paid social spaces, and students with more prior exposure begin with greater social comfort. At the same time, widely accessible campus activities are connected across spending groups and comfort improves with time. The useful question is therefore not “does inequality disappear?” but “which parts of campus life reproduce it, and which parts help bridge it?”</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="shell footer-inner">
+      <span>Same Campus, Unequal Beginnings</span>
+      <span>Digital Humanities research prototype · Synthetic pilot data</span>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

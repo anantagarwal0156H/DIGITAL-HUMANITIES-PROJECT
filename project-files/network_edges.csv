@@ -1,0 +1,1191 @@
+﻿source,target,weight,activity_cost_type
+S001,Hostel hangout,2,free
+S001,Club / society meeting,3,free
+S001,Sports / recreation,4,free
+S001,Campus canteen,2,low_cost
+S001,Fest / campus event,4,low_cost
+S001,Off-campus meal,1,paid
+S001,Cafe outing,4,paid
+S001,Trip / travel,2,paid
+S002,Club / society meeting,2,free
+S002,Sports / recreation,1,free
+S002,Campus canteen,1,low_cost
+S002,Movie / mall,1,paid
+S003,Club / society meeting,4,free
+S003,Sports / recreation,3,free
+S003,Fest / campus event,3,low_cost
+S003,Off-campus meal,2,paid
+S003,Cafe outing,1,paid
+S004,Hostel hangout,3,free
+S004,Club / society meeting,2,free
+S004,Sports / recreation,3,free
+S004,Cultural event,1,free
+S004,Campus canteen,1,low_cost
+S004,Fest / campus event,4,low_cost
+S004,Off-campus meal,3,paid
+S004,Movie / mall,4,paid
+S004,Trip / travel,1,paid
+S005,Hostel hangout,1,free
+S005,Club / society meeting,1,free
+S005,Sports / recreation,3,free
+S005,Campus canteen,1,low_cost
+S005,Fest / campus event,4,low_cost
+S005,Off-campus meal,3,paid
+S005,Cafe outing,4,paid
+S005,Movie / mall,1,paid
+S006,Hostel hangout,2,free
+S006,Club / society meeting,1,free
+S006,Sports / recreation,2,free
+S006,Cultural event,1,free
+S006,Campus canteen,4,low_cost
+S006,Off-campus meal,1,paid
+S006,Cafe outing,3,paid
+S007,Hostel hangout,2,free
+S007,Club / society meeting,2,free
+S007,Sports / recreation,2,free
+S007,Cultural event,4,free
+S007,Campus canteen,4,low_cost
+S008,Hostel hangout,4,free
+S008,Sports / recreation,1,free
+S008,Cultural event,3,free
+S008,Campus canteen,2,low_cost
+S008,Fest / campus event,1,low_cost
+S008,Off-campus meal,3,paid
+S008,Movie / mall,4,paid
+S009,Club / society meeting,2,free
+S009,Sports / recreation,2,free
+S009,Cultural event,2,free
+S009,Fest / campus event,1,low_cost
+S010,Hostel hangout,2,free
+S010,Sports / recreation,1,free
+S010,Fest / campus event,2,low_cost
+S011,Hostel hangout,2,free
+S011,Cultural event,3,free
+S011,Campus canteen,4,low_cost
+S011,Fest / campus event,2,low_cost
+S011,Cafe outing,2,paid
+S012,Sports / recreation,1,free
+S012,Cultural event,1,free
+S012,Off-campus meal,1,paid
+S012,Cafe outing,2,paid
+S012,Movie / mall,1,paid
+S013,Hostel hangout,2,free
+S013,Club / society meeting,4,free
+S013,Sports / recreation,3,free
+S013,Campus canteen,2,low_cost
+S013,Off-campus meal,2,paid
+S014,Hostel hangout,3,free
+S014,Club / society meeting,3,free
+S014,Campus canteen,4,low_cost
+S014,Fest / campus event,1,low_cost
+S014,Trip / travel,3,paid
+S015,Hostel hangout,2,free
+S015,Club / society meeting,4,free
+S015,Sports / recreation,4,free
+S015,Campus canteen,2,low_cost
+S015,Fest / campus event,3,low_cost
+S016,Hostel hangout,4,free
+S016,Club / society meeting,2,free
+S016,Cultural event,1,free
+S016,Campus canteen,1,low_cost
+S016,Fest / campus event,2,low_cost
+S016,Off-campus meal,1,paid
+S016,Cafe outing,2,paid
+S016,Movie / mall,2,paid
+S017,Hostel hangout,2,free
+S017,Club / society meeting,1,free
+S017,Sports / recreation,2,free
+S017,Cultural event,1,free
+S017,Campus canteen,4,low_cost
+S017,Fest / campus event,1,low_cost
+S017,Trip / travel,4,paid
+S018,Hostel hangout,1,free
+S018,Cultural event,1,free
+S018,Campus canteen,1,low_cost
+S018,Cafe outing,2,paid
+S019,Hostel hangout,3,free
+S019,Sports / recreation,1,free
+S019,Cultural event,3,free
+S019,Campus canteen,4,low_cost
+S019,Fest / campus event,3,low_cost
+S019,Cafe outing,3,paid
+S019,Movie / mall,4,paid
+S019,Trip / travel,4,paid
+S020,Hostel hangout,1,free
+S020,Club / society meeting,1,free
+S020,Campus canteen,1,low_cost
+S020,Movie / mall,1,paid
+S021,Hostel hangout,2,free
+S021,Club / society meeting,2,free
+S021,Campus canteen,4,low_cost
+S021,Fest / campus event,1,low_cost
+S022,Hostel hangout,2,free
+S022,Campus canteen,2,low_cost
+S022,Fest / campus event,3,low_cost
+S022,Off-campus meal,3,paid
+S022,Movie / mall,2,paid
+S023,Hostel hangout,4,free
+S023,Club / society meeting,3,free
+S023,Campus canteen,2,low_cost
+S023,Fest / campus event,1,low_cost
+S023,Movie / mall,1,paid
+S024,Hostel hangout,4,free
+S024,Club / society meeting,4,free
+S024,Cultural event,3,free
+S024,Campus canteen,4,low_cost
+S024,Fest / campus event,3,low_cost
+S024,Off-campus meal,4,paid
+S024,Cafe outing,3,paid
+S024,Movie / mall,3,paid
+S024,Trip / travel,4,paid
+S025,Club / society meeting,4,free
+S025,Sports / recreation,4,free
+S025,Cultural event,4,free
+S025,Campus canteen,2,low_cost
+S025,Fest / campus event,1,low_cost
+S025,Off-campus meal,3,paid
+S025,Movie / mall,4,paid
+S026,Hostel hangout,3,free
+S026,Club / society meeting,4,free
+S026,Sports / recreation,2,free
+S026,Fest / campus event,1,low_cost
+S027,Hostel hangout,2,free
+S027,Club / society meeting,1,free
+S027,Sports / recreation,1,free
+S027,Campus canteen,2,low_cost
+S027,Fest / campus event,2,low_cost
+S027,Off-campus meal,3,paid
+S027,Cafe outing,2,paid
+S028,Hostel hangout,2,free
+S028,Sports / recreation,2,free
+S028,Campus canteen,2,low_cost
+S028,Fest / campus event,3,low_cost
+S028,Off-campus meal,1,paid
+S028,Movie / mall,3,paid
+S029,Hostel hangout,2,free
+S029,Campus canteen,3,low_cost
+S029,Off-campus meal,3,paid
+S030,Hostel hangout,3,free
+S030,Club / society meeting,2,free
+S030,Sports / recreation,2,free
+S030,Cultural event,3,free
+S030,Fest / campus event,2,low_cost
+S030,Cafe outing,2,paid
+S030,Movie / mall,3,paid
+S031,Hostel hangout,4,free
+S031,Club / society meeting,4,free
+S031,Cultural event,2,free
+S031,Off-campus meal,1,paid
+S032,Hostel hangout,2,free
+S032,Club / society meeting,4,free
+S032,Sports / recreation,4,free
+S032,Cultural event,3,free
+S032,Campus canteen,4,low_cost
+S032,Fest / campus event,1,low_cost
+S032,Off-campus meal,2,paid
+S032,Cafe outing,3,paid
+S032,Movie / mall,4,paid
+S033,Club / society meeting,2,free
+S033,Sports / recreation,3,free
+S033,Cultural event,1,free
+S033,Campus canteen,1,low_cost
+S033,Fest / campus event,3,low_cost
+S034,Hostel hangout,4,free
+S034,Sports / recreation,1,free
+S034,Cultural event,2,free
+S034,Campus canteen,2,low_cost
+S034,Movie / mall,2,paid
+S035,Sports / recreation,1,free
+S035,Cultural event,2,free
+S035,Fest / campus event,2,low_cost
+S035,Cafe outing,1,paid
+S036,Hostel hangout,3,free
+S036,Club / society meeting,2,free
+S036,Campus canteen,2,low_cost
+S036,Fest / campus event,3,low_cost
+S036,Off-campus meal,3,paid
+S036,Movie / mall,1,paid
+S036,Trip / travel,3,paid
+S037,Hostel hangout,4,free
+S037,Sports / recreation,4,free
+S037,Cultural event,2,free
+S037,Cafe outing,3,paid
+S037,Trip / travel,4,paid
+S038,Hostel hangout,1,free
+S038,Campus canteen,2,low_cost
+S038,Trip / travel,1,paid
+S039,Hostel hangout,2,free
+S039,Club / society meeting,3,free
+S039,Campus canteen,3,low_cost
+S039,Off-campus meal,2,paid
+S039,Cafe outing,2,paid
+S039,Trip / travel,2,paid
+S040,Hostel hangout,1,free
+S040,Club / society meeting,4,free
+S040,Sports / recreation,1,free
+S040,Cultural event,3,free
+S040,Campus canteen,2,low_cost
+S040,Fest / campus event,3,low_cost
+S040,Cafe outing,4,paid
+S040,Movie / mall,4,paid
+S041,Hostel hangout,1,free
+S041,Club / society meeting,1,free
+S041,Campus canteen,1,low_cost
+S041,Off-campus meal,1,paid
+S041,Cafe outing,2,paid
+S042,Hostel hangout,2,free
+S042,Club / society meeting,2,free
+S042,Sports / recreation,4,free
+S042,Cultural event,3,free
+S042,Campus canteen,2,low_cost
+S042,Off-campus meal,2,paid
+S043,Hostel hangout,2,free
+S043,Sports / recreation,1,free
+S043,Campus canteen,4,low_cost
+S043,Off-campus meal,2,paid
+S043,Movie / mall,3,paid
+S044,Hostel hangout,2,free
+S044,Club / society meeting,1,free
+S044,Sports / recreation,2,free
+S044,Cultural event,2,free
+S044,Campus canteen,3,low_cost
+S044,Fest / campus event,2,low_cost
+S044,Cafe outing,3,paid
+S044,Trip / travel,3,paid
+S045,Hostel hangout,3,free
+S045,Club / society meeting,3,free
+S045,Cultural event,2,free
+S045,Campus canteen,2,low_cost
+S045,Fest / campus event,2,low_cost
+S045,Off-campus meal,3,paid
+S045,Cafe outing,3,paid
+S045,Movie / mall,2,paid
+S046,Hostel hangout,1,free
+S046,Club / society meeting,1,free
+S046,Sports / recreation,2,free
+S046,Campus canteen,1,low_cost
+S046,Off-campus meal,2,paid
+S047,Hostel hangout,1,free
+S047,Club / society meeting,2,free
+S047,Sports / recreation,2,free
+S047,Campus canteen,2,low_cost
+S047,Fest / campus event,2,low_cost
+S048,Hostel hangout,1,free
+S048,Club / society meeting,3,free
+S048,Campus canteen,4,low_cost
+S048,Fest / campus event,1,low_cost
+S049,Hostel hangout,2,free
+S049,Club / society meeting,1,free
+S049,Sports / recreation,1,free
+S049,Cultural event,2,free
+S049,Campus canteen,4,low_cost
+S049,Fest / campus event,4,low_cost
+S049,Off-campus meal,2,paid
+S050,Club / society meeting,4,free
+S050,Sports / recreation,2,free
+S050,Fest / campus event,2,low_cost
+S051,Hostel hangout,2,free
+S051,Club / society meeting,2,free
+S051,Cultural event,2,free
+S051,Campus canteen,2,low_cost
+S051,Fest / campus event,3,low_cost
+S051,Off-campus meal,2,paid
+S052,Hostel hangout,2,free
+S052,Sports / recreation,3,free
+S052,Cultural event,1,free
+S052,Fest / campus event,1,low_cost
+S052,Cafe outing,3,paid
+S052,Movie / mall,4,paid
+S053,Hostel hangout,2,free
+S053,Cultural event,4,free
+S053,Campus canteen,4,low_cost
+S053,Off-campus meal,3,paid
+S053,Cafe outing,4,paid
+S053,Trip / travel,2,paid
+S054,Hostel hangout,2,free
+S054,Club / society meeting,3,free
+S054,Sports / recreation,3,free
+S054,Campus canteen,1,low_cost
+S054,Off-campus meal,2,paid
+S054,Cafe outing,4,paid
+S055,Hostel hangout,3,free
+S055,Campus canteen,4,low_cost
+S055,Fest / campus event,2,low_cost
+S055,Off-campus meal,2,paid
+S055,Cafe outing,2,paid
+S056,Hostel hangout,3,free
+S056,Club / society meeting,4,free
+S056,Cultural event,1,free
+S056,Campus canteen,1,low_cost
+S056,Fest / campus event,4,low_cost
+S056,Cafe outing,4,paid
+S056,Movie / mall,2,paid
+S057,Hostel hangout,4,free
+S057,Club / society meeting,2,free
+S057,Cultural event,3,free
+S057,Campus canteen,4,low_cost
+S057,Fest / campus event,4,low_cost
+S057,Off-campus meal,4,paid
+S057,Movie / mall,2,paid
+S058,Hostel hangout,2,free
+S058,Club / society meeting,2,free
+S058,Sports / recreation,3,free
+S058,Campus canteen,3,low_cost
+S058,Fest / campus event,4,low_cost
+S058,Off-campus meal,3,paid
+S058,Trip / travel,2,paid
+S059,Hostel hangout,2,free
+S059,Sports / recreation,2,free
+S059,Cultural event,2,free
+S059,Campus canteen,1,low_cost
+S059,Off-campus meal,4,paid
+S059,Movie / mall,1,paid
+S060,Hostel hangout,1,free
+S060,Club / society meeting,2,free
+S060,Campus canteen,1,low_cost
+S060,Off-campus meal,4,paid
+S060,Cafe outing,1,paid
+S060,Movie / mall,2,paid
+S060,Trip / travel,2,paid
+S061,Hostel hangout,2,free
+S061,Sports / recreation,4,free
+S061,Cultural event,2,free
+S061,Campus canteen,2,low_cost
+S061,Fest / campus event,1,low_cost
+S061,Cafe outing,3,paid
+S062,Hostel hangout,1,free
+S062,Club / society meeting,1,free
+S062,Cultural event,1,free
+S062,Campus canteen,2,low_cost
+S062,Off-campus meal,1,paid
+S062,Cafe outing,3,paid
+S062,Movie / mall,3,paid
+S062,Trip / travel,4,paid
+S063,Hostel hangout,1,free
+S063,Club / society meeting,4,free
+S063,Sports / recreation,2,free
+S063,Campus canteen,1,low_cost
+S063,Fest / campus event,2,low_cost
+S063,Off-campus meal,2,paid
+S064,Hostel hangout,1,free
+S064,Club / society meeting,1,free
+S064,Cafe outing,1,paid
+S064,Movie / mall,1,paid
+S065,Hostel hangout,1,free
+S065,Club / society meeting,3,free
+S065,Campus canteen,2,low_cost
+S065,Fest / campus event,2,low_cost
+S065,Movie / mall,1,paid
+S066,Hostel hangout,4,free
+S066,Campus canteen,3,low_cost
+S066,Fest / campus event,3,low_cost
+S066,Off-campus meal,3,paid
+S066,Cafe outing,1,paid
+S067,Hostel hangout,4,free
+S067,Club / society meeting,2,free
+S067,Campus canteen,2,low_cost
+S067,Fest / campus event,2,low_cost
+S067,Movie / mall,2,paid
+S067,Trip / travel,2,paid
+S068,Hostel hangout,1,free
+S068,Club / society meeting,2,free
+S068,Sports / recreation,4,free
+S068,Cultural event,2,free
+S068,Campus canteen,2,low_cost
+S068,Cafe outing,3,paid
+S068,Movie / mall,1,paid
+S069,Hostel hangout,1,free
+S069,Sports / recreation,1,free
+S069,Campus canteen,2,low_cost
+S069,Fest / campus event,4,low_cost
+S069,Off-campus meal,1,paid
+S069,Cafe outing,4,paid
+S069,Movie / mall,2,paid
+S070,Hostel hangout,3,free
+S070,Cultural event,2,free
+S070,Campus canteen,4,low_cost
+S070,Fest / campus event,2,low_cost
+S070,Off-campus meal,1,paid
+S070,Trip / travel,1,paid
+S071,Hostel hangout,1,free
+S071,Club / society meeting,1,free
+S071,Cultural event,2,free
+S071,Campus canteen,2,low_cost
+S071,Off-campus meal,1,paid
+S071,Cafe outing,1,paid
+S071,Movie / mall,1,paid
+S071,Trip / travel,4,paid
+S072,Hostel hangout,1,free
+S072,Club / society meeting,1,free
+S072,Sports / recreation,2,free
+S072,Cultural event,2,free
+S072,Campus canteen,1,low_cost
+S072,Fest / campus event,4,low_cost
+S072,Off-campus meal,1,paid
+S072,Cafe outing,3,paid
+S072,Trip / travel,3,paid
+S073,Hostel hangout,2,free
+S073,Sports / recreation,4,free
+S073,Cultural event,3,free
+S073,Fest / campus event,3,low_cost
+S073,Off-campus meal,4,paid
+S073,Cafe outing,2,paid
+S073,Movie / mall,1,paid
+S074,Hostel hangout,3,free
+S074,Club / society meeting,2,free
+S074,Cultural event,1,free
+S074,Fest / campus event,2,low_cost
+S074,Cafe outing,1,paid
+S075,Hostel hangout,2,free
+S075,Club / society meeting,4,free
+S075,Campus canteen,3,low_cost
+S076,Hostel hangout,2,free
+S076,Club / society meeting,3,free
+S076,Sports / recreation,2,free
+S076,Campus canteen,1,low_cost
+S076,Fest / campus event,3,low_cost
+S076,Off-campus meal,3,paid
+S076,Cafe outing,2,paid
+S077,Hostel hangout,4,free
+S077,Club / society meeting,2,free
+S077,Campus canteen,2,low_cost
+S078,Hostel hangout,2,free
+S078,Club / society meeting,2,free
+S078,Sports / recreation,4,free
+S078,Cultural event,3,free
+S078,Campus canteen,4,low_cost
+S078,Fest / campus event,4,low_cost
+S078,Movie / mall,1,paid
+S078,Trip / travel,1,paid
+S079,Hostel hangout,1,free
+S079,Sports / recreation,2,free
+S079,Cultural event,2,free
+S079,Campus canteen,3,low_cost
+S079,Fest / campus event,2,low_cost
+S079,Off-campus meal,3,paid
+S079,Cafe outing,4,paid
+S079,Movie / mall,3,paid
+S079,Trip / travel,1,paid
+S080,Hostel hangout,4,free
+S080,Club / society meeting,4,free
+S080,Sports / recreation,4,free
+S080,Cultural event,2,free
+S080,Campus canteen,2,low_cost
+S080,Off-campus meal,2,paid
+S080,Cafe outing,1,paid
+S081,Hostel hangout,4,free
+S081,Club / society meeting,3,free
+S081,Cultural event,3,free
+S081,Campus canteen,2,low_cost
+S081,Fest / campus event,4,low_cost
+S081,Off-campus meal,2,paid
+S081,Cafe outing,1,paid
+S082,Hostel hangout,3,free
+S082,Sports / recreation,3,free
+S082,Cultural event,2,free
+S082,Campus canteen,4,low_cost
+S082,Fest / campus event,2,low_cost
+S082,Off-campus meal,1,paid
+S082,Cafe outing,2,paid
+S082,Trip / travel,2,paid
+S083,Hostel hangout,1,free
+S083,Club / society meeting,2,free
+S083,Off-campus meal,3,paid
+S083,Trip / travel,1,paid
+S084,Hostel hangout,3,free
+S084,Club / society meeting,4,free
+S084,Sports / recreation,2,free
+S084,Campus canteen,1,low_cost
+S084,Fest / campus event,2,low_cost
+S084,Off-campus meal,1,paid
+S084,Cafe outing,2,paid
+S084,Movie / mall,1,paid
+S084,Trip / travel,4,paid
+S085,Hostel hangout,2,free
+S085,Club / society meeting,1,free
+S085,Sports / recreation,1,free
+S085,Campus canteen,2,low_cost
+S085,Fest / campus event,1,low_cost
+S085,Movie / mall,1,paid
+S085,Trip / travel,1,paid
+S086,Hostel hangout,1,free
+S086,Club / society meeting,2,free
+S086,Campus canteen,1,low_cost
+S087,Hostel hangout,2,free
+S088,Hostel hangout,2,free
+S088,Cultural event,1,free
+S088,Fest / campus event,2,low_cost
+S088,Cafe outing,3,paid
+S088,Movie / mall,4,paid
+S089,Hostel hangout,2,free
+S089,Campus canteen,3,low_cost
+S089,Fest / campus event,2,low_cost
+S089,Cafe outing,2,paid
+S090,Hostel hangout,2,free
+S090,Campus canteen,4,low_cost
+S090,Fest / campus event,3,low_cost
+S090,Off-campus meal,2,paid
+S090,Movie / mall,2,paid
+S090,Trip / travel,1,paid
+S091,Hostel hangout,2,free
+S091,Club / society meeting,3,free
+S091,Sports / recreation,1,free
+S091,Campus canteen,2,low_cost
+S091,Fest / campus event,3,low_cost
+S091,Off-campus meal,3,paid
+S092,Hostel hangout,4,free
+S092,Club / society meeting,4,free
+S092,Sports / recreation,3,free
+S092,Cultural event,3,free
+S092,Campus canteen,2,low_cost
+S092,Fest / campus event,1,low_cost
+S092,Off-campus meal,4,paid
+S092,Cafe outing,4,paid
+S092,Movie / mall,4,paid
+S093,Hostel hangout,4,free
+S093,Club / society meeting,3,free
+S093,Sports / recreation,3,free
+S093,Campus canteen,4,low_cost
+S093,Fest / campus event,1,low_cost
+S093,Off-campus meal,3,paid
+S093,Cafe outing,4,paid
+S094,Hostel hangout,4,free
+S094,Club / society meeting,1,free
+S094,Sports / recreation,3,free
+S094,Campus canteen,3,low_cost
+S094,Fest / campus event,3,low_cost
+S094,Off-campus meal,2,paid
+S094,Cafe outing,3,paid
+S094,Movie / mall,2,paid
+S095,Hostel hangout,1,free
+S095,Club / society meeting,1,free
+S095,Cultural event,2,free
+S095,Campus canteen,1,low_cost
+S095,Off-campus meal,2,paid
+S095,Cafe outing,1,paid
+S095,Movie / mall,2,paid
+S095,Trip / travel,1,paid
+S096,Sports / recreation,2,free
+S096,Cultural event,2,free
+S096,Fest / campus event,2,low_cost
+S096,Off-campus meal,3,paid
+S096,Movie / mall,2,paid
+S097,Hostel hangout,4,free
+S097,Club / society meeting,3,free
+S097,Sports / recreation,2,free
+S097,Campus canteen,1,low_cost
+S097,Off-campus meal,3,paid
+S097,Cafe outing,1,paid
+S097,Movie / mall,2,paid
+S098,Hostel hangout,2,free
+S098,Club / society meeting,2,free
+S098,Sports / recreation,1,free
+S098,Fest / campus event,4,low_cost
+S098,Off-campus meal,2,paid
+S098,Cafe outing,2,paid
+S098,Movie / mall,4,paid
+S098,Trip / travel,1,paid
+S099,Hostel hangout,2,free
+S099,Club / society meeting,1,free
+S099,Sports / recreation,2,free
+S099,Cultural event,2,free
+S099,Campus canteen,1,low_cost
+S099,Fest / campus event,1,low_cost
+S099,Cafe outing,2,paid
+S099,Trip / travel,4,paid
+S100,Hostel hangout,2,free
+S100,Club / society meeting,1,free
+S100,Campus canteen,4,low_cost
+S100,Off-campus meal,3,paid
+S100,Movie / mall,2,paid
+S100,Trip / travel,1,paid
+S101,Hostel hangout,2,free
+S101,Sports / recreation,2,free
+S101,Cultural event,3,free
+S101,Campus canteen,1,low_cost
+S101,Fest / campus event,2,low_cost
+S101,Off-campus meal,1,paid
+S101,Cafe outing,2,paid
+S101,Movie / mall,4,paid
+S102,Hostel hangout,1,free
+S102,Club / society meeting,1,free
+S102,Sports / recreation,2,free
+S102,Campus canteen,4,low_cost
+S102,Off-campus meal,2,paid
+S102,Cafe outing,1,paid
+S103,Hostel hangout,1,free
+S103,Club / society meeting,4,free
+S103,Cultural event,1,free
+S103,Campus canteen,3,low_cost
+S103,Fest / campus event,3,low_cost
+S103,Off-campus meal,1,paid
+S103,Cafe outing,2,paid
+S103,Movie / mall,1,paid
+S103,Trip / travel,2,paid
+S104,Hostel hangout,1,free
+S104,Club / society meeting,3,free
+S104,Campus canteen,2,low_cost
+S104,Fest / campus event,3,low_cost
+S104,Trip / travel,2,paid
+S105,Hostel hangout,2,free
+S105,Club / society meeting,3,free
+S105,Campus canteen,1,low_cost
+S105,Off-campus meal,1,paid
+S106,Hostel hangout,3,free
+S106,Campus canteen,1,low_cost
+S106,Fest / campus event,1,low_cost
+S106,Off-campus meal,1,paid
+S106,Movie / mall,2,paid
+S107,Hostel hangout,1,free
+S107,Club / society meeting,1,free
+S107,Campus canteen,2,low_cost
+S107,Fest / campus event,3,low_cost
+S107,Off-campus meal,4,paid
+S108,Hostel hangout,1,free
+S108,Club / society meeting,3,free
+S108,Sports / recreation,3,free
+S108,Cultural event,2,free
+S108,Campus canteen,2,low_cost
+S108,Fest / campus event,3,low_cost
+S108,Off-campus meal,3,paid
+S108,Cafe outing,1,paid
+S108,Movie / mall,4,paid
+S109,Hostel hangout,3,free
+S109,Sports / recreation,2,free
+S109,Campus canteen,4,low_cost
+S109,Fest / campus event,3,low_cost
+S109,Off-campus meal,3,paid
+S109,Movie / mall,4,paid
+S110,Club / society meeting,1,free
+S110,Off-campus meal,3,paid
+S110,Movie / mall,1,paid
+S111,Club / society meeting,1,free
+S111,Sports / recreation,2,free
+S112,Club / society meeting,2,free
+S112,Cultural event,2,free
+S112,Campus canteen,1,low_cost
+S112,Fest / campus event,1,low_cost
+S112,Off-campus meal,1,paid
+S112,Cafe outing,2,paid
+S112,Movie / mall,3,paid
+S112,Trip / travel,3,paid
+S113,Hostel hangout,3,free
+S113,Club / society meeting,3,free
+S113,Sports / recreation,1,free
+S113,Campus canteen,4,low_cost
+S113,Fest / campus event,2,low_cost
+S113,Movie / mall,1,paid
+S114,Hostel hangout,2,free
+S114,Sports / recreation,1,free
+S114,Cultural event,2,free
+S114,Campus canteen,1,low_cost
+S114,Fest / campus event,2,low_cost
+S114,Cafe outing,1,paid
+S115,Hostel hangout,2,free
+S115,Sports / recreation,4,free
+S115,Campus canteen,2,low_cost
+S116,Hostel hangout,1,free
+S116,Club / society meeting,3,free
+S116,Sports / recreation,2,free
+S116,Cultural event,2,free
+S116,Campus canteen,2,low_cost
+S116,Fest / campus event,2,low_cost
+S116,Movie / mall,3,paid
+S116,Trip / travel,2,paid
+S117,Hostel hangout,1,free
+S117,Club / society meeting,2,free
+S117,Campus canteen,3,low_cost
+S117,Fest / campus event,3,low_cost
+S117,Off-campus meal,2,paid
+S117,Cafe outing,2,paid
+S118,Club / society meeting,3,free
+S118,Cultural event,4,free
+S118,Campus canteen,3,low_cost
+S118,Fest / campus event,2,low_cost
+S118,Off-campus meal,3,paid
+S118,Cafe outing,2,paid
+S118,Movie / mall,2,paid
+S118,Trip / travel,2,paid
+S119,Sports / recreation,3,free
+S119,Off-campus meal,1,paid
+S119,Cafe outing,3,paid
+S120,Hostel hangout,1,free
+S120,Trip / travel,2,paid
+S121,Hostel hangout,1,free
+S121,Club / society meeting,3,free
+S121,Cultural event,2,free
+S121,Campus canteen,1,low_cost
+S121,Fest / campus event,2,low_cost
+S121,Off-campus meal,2,paid
+S121,Cafe outing,3,paid
+S121,Movie / mall,4,paid
+S121,Trip / travel,2,paid
+S122,Hostel hangout,3,free
+S122,Club / society meeting,4,free
+S122,Cultural event,4,free
+S122,Campus canteen,2,low_cost
+S122,Fest / campus event,4,low_cost
+S122,Off-campus meal,3,paid
+S122,Trip / travel,4,paid
+S123,Hostel hangout,4,free
+S123,Club / society meeting,3,free
+S123,Sports / recreation,4,free
+S123,Campus canteen,2,low_cost
+S123,Cafe outing,3,paid
+S123,Movie / mall,2,paid
+S123,Trip / travel,4,paid
+S124,Hostel hangout,4,free
+S124,Campus canteen,1,low_cost
+S124,Fest / campus event,4,low_cost
+S125,Hostel hangout,2,free
+S125,Club / society meeting,2,free
+S125,Cultural event,2,free
+S125,Campus canteen,3,low_cost
+S125,Fest / campus event,2,low_cost
+S125,Off-campus meal,3,paid
+S125,Trip / travel,1,paid
+S126,Hostel hangout,1,free
+S126,Club / society meeting,1,free
+S126,Sports / recreation,2,free
+S126,Campus canteen,1,low_cost
+S126,Off-campus meal,1,paid
+S127,Hostel hangout,2,free
+S127,Sports / recreation,2,free
+S127,Campus canteen,2,low_cost
+S127,Fest / campus event,2,low_cost
+S127,Off-campus meal,3,paid
+S127,Cafe outing,2,paid
+S127,Movie / mall,2,paid
+S128,Hostel hangout,3,free
+S128,Club / society meeting,2,free
+S128,Sports / recreation,2,free
+S128,Campus canteen,3,low_cost
+S128,Off-campus meal,2,paid
+S129,Sports / recreation,2,free
+S129,Movie / mall,1,paid
+S130,Hostel hangout,1,free
+S130,Club / society meeting,3,free
+S130,Sports / recreation,1,free
+S130,Campus canteen,2,low_cost
+S130,Fest / campus event,4,low_cost
+S130,Off-campus meal,1,paid
+S130,Trip / travel,2,paid
+S131,Hostel hangout,2,free
+S131,Club / society meeting,1,free
+S131,Cultural event,2,free
+S131,Campus canteen,4,low_cost
+S131,Fest / campus event,2,low_cost
+S131,Off-campus meal,3,paid
+S131,Trip / travel,2,paid
+S132,Hostel hangout,1,free
+S132,Club / society meeting,1,free
+S132,Cultural event,1,free
+S132,Campus canteen,1,low_cost
+S132,Fest / campus event,1,low_cost
+S133,Hostel hangout,4,free
+S133,Club / society meeting,3,free
+S133,Sports / recreation,4,free
+S133,Cultural event,4,free
+S133,Campus canteen,2,low_cost
+S133,Off-campus meal,2,paid
+S133,Movie / mall,4,paid
+S133,Trip / travel,3,paid
+S134,Hostel hangout,2,free
+S134,Club / society meeting,2,free
+S134,Sports / recreation,2,free
+S134,Cultural event,4,free
+S134,Campus canteen,1,low_cost
+S134,Fest / campus event,1,low_cost
+S134,Cafe outing,2,paid
+S134,Movie / mall,4,paid
+S134,Trip / travel,2,paid
+S135,Hostel hangout,1,free
+S135,Cultural event,1,free
+S135,Campus canteen,3,low_cost
+S135,Cafe outing,4,paid
+S136,Hostel hangout,2,free
+S136,Sports / recreation,2,free
+S136,Cultural event,2,free
+S136,Campus canteen,3,low_cost
+S136,Fest / campus event,1,low_cost
+S136,Off-campus meal,4,paid
+S136,Movie / mall,4,paid
+S137,Hostel hangout,1,free
+S137,Off-campus meal,2,paid
+S137,Movie / mall,3,paid
+S138,Hostel hangout,3,free
+S138,Club / society meeting,4,free
+S138,Cultural event,1,free
+S138,Campus canteen,1,low_cost
+S138,Fest / campus event,1,low_cost
+S138,Off-campus meal,3,paid
+S138,Cafe outing,4,paid
+S138,Movie / mall,4,paid
+S138,Trip / travel,4,paid
+S139,Club / society meeting,1,free
+S139,Sports / recreation,1,free
+S139,Off-campus meal,2,paid
+S139,Cafe outing,3,paid
+S139,Movie / mall,2,paid
+S140,Hostel hangout,1,free
+S140,Sports / recreation,3,free
+S140,Cultural event,3,free
+S140,Campus canteen,1,low_cost
+S140,Off-campus meal,2,paid
+S140,Cafe outing,4,paid
+S140,Movie / mall,3,paid
+S141,Hostel hangout,3,free
+S141,Club / society meeting,4,free
+S141,Campus canteen,4,low_cost
+S141,Fest / campus event,1,low_cost
+S141,Cafe outing,2,paid
+S142,Hostel hangout,2,free
+S142,Sports / recreation,2,free
+S142,Campus canteen,2,low_cost
+S142,Fest / campus event,2,low_cost
+S142,Off-campus meal,1,paid
+S142,Cafe outing,3,paid
+S142,Trip / travel,3,paid
+S143,Club / society meeting,3,free
+S143,Sports / recreation,4,free
+S143,Cultural event,3,free
+S143,Campus canteen,3,low_cost
+S143,Fest / campus event,4,low_cost
+S143,Cafe outing,3,paid
+S143,Trip / travel,2,paid
+S144,Hostel hangout,2,free
+S144,Cultural event,2,free
+S144,Campus canteen,2,low_cost
+S144,Fest / campus event,4,low_cost
+S145,Club / society meeting,4,free
+S145,Campus canteen,4,low_cost
+S145,Fest / campus event,3,low_cost
+S145,Off-campus meal,2,paid
+S145,Cafe outing,3,paid
+S146,Hostel hangout,3,free
+S146,Cultural event,2,free
+S146,Campus canteen,2,low_cost
+S146,Cafe outing,3,paid
+S147,Hostel hangout,1,free
+S147,Club / society meeting,1,free
+S147,Campus canteen,2,low_cost
+S147,Fest / campus event,1,low_cost
+S147,Trip / travel,3,paid
+S148,Hostel hangout,3,free
+S148,Club / society meeting,2,free
+S148,Sports / recreation,1,free
+S148,Campus canteen,3,low_cost
+S148,Fest / campus event,4,low_cost
+S148,Off-campus meal,4,paid
+S148,Cafe outing,4,paid
+S148,Movie / mall,2,paid
+S148,Trip / travel,4,paid
+S149,Hostel hangout,4,free
+S149,Fest / campus event,2,low_cost
+S149,Off-campus meal,2,paid
+S149,Cafe outing,3,paid
+S149,Movie / mall,1,paid
+S149,Trip / travel,4,paid
+S150,Hostel hangout,4,free
+S150,Club / society meeting,3,free
+S150,Sports / recreation,1,free
+S150,Cultural event,2,free
+S150,Campus canteen,3,low_cost
+S150,Fest / campus event,4,low_cost
+S150,Off-campus meal,3,paid
+S150,Cafe outing,1,paid
+S151,Hostel hangout,2,free
+S151,Sports / recreation,2,free
+S151,Cultural event,1,free
+S151,Campus canteen,4,low_cost
+S151,Fest / campus event,4,low_cost
+S151,Off-campus meal,4,paid
+S151,Movie / mall,2,paid
+S152,Hostel hangout,3,free
+S152,Campus canteen,2,low_cost
+S152,Fest / campus event,1,low_cost
+S152,Trip / travel,3,paid
+S153,Hostel hangout,4,free
+S153,Campus canteen,1,low_cost
+S153,Fest / campus event,4,low_cost
+S153,Off-campus meal,2,paid
+S153,Trip / travel,1,paid
+S154,Hostel hangout,1,free
+S154,Fest / campus event,3,low_cost
+S154,Off-campus meal,1,paid
+S155,Hostel hangout,3,free
+S155,Club / society meeting,3,free
+S155,Sports / recreation,3,free
+S155,Fest / campus event,3,low_cost
+S156,Hostel hangout,1,free
+S156,Campus canteen,1,low_cost
+S156,Cafe outing,1,paid
+S156,Movie / mall,2,paid
+S157,Hostel hangout,2,free
+S157,Club / society meeting,2,free
+S157,Cultural event,1,free
+S157,Campus canteen,4,low_cost
+S157,Fest / campus event,1,low_cost
+S157,Off-campus meal,4,paid
+S157,Cafe outing,3,paid
+S157,Movie / mall,2,paid
+S158,Hostel hangout,3,free
+S158,Club / society meeting,4,free
+S158,Sports / recreation,3,free
+S158,Campus canteen,2,low_cost
+S158,Fest / campus event,1,low_cost
+S158,Off-campus meal,1,paid
+S158,Cafe outing,2,paid
+S159,Hostel hangout,1,free
+S159,Sports / recreation,3,free
+S159,Cultural event,1,free
+S159,Trip / travel,2,paid
+S160,Hostel hangout,3,free
+S160,Fest / campus event,1,low_cost
+S160,Cafe outing,2,paid
+S161,Club / society meeting,3,free
+S161,Campus canteen,2,low_cost
+S161,Movie / mall,2,paid
+S162,Hostel hangout,1,free
+S162,Club / society meeting,1,free
+S162,Cultural event,1,free
+S162,Campus canteen,3,low_cost
+S162,Off-campus meal,1,paid
+S163,Sports / recreation,1,free
+S163,Campus canteen,2,low_cost
+S163,Fest / campus event,3,low_cost
+S164,Hostel hangout,4,free
+S164,Club / society meeting,3,free
+S164,Cultural event,2,free
+S164,Campus canteen,1,low_cost
+S164,Trip / travel,3,paid
+S165,Hostel hangout,1,free
+S165,Sports / recreation,2,free
+S165,Campus canteen,3,low_cost
+S165,Fest / campus event,2,low_cost
+S165,Off-campus meal,2,paid
+S166,Hostel hangout,2,free
+S166,Club / society meeting,2,free
+S166,Sports / recreation,2,free
+S166,Campus canteen,3,low_cost
+S166,Fest / campus event,4,low_cost
+S167,Hostel hangout,4,free
+S167,Sports / recreation,4,free
+S167,Cultural event,4,free
+S167,Campus canteen,1,low_cost
+S167,Fest / campus event,3,low_cost
+S167,Off-campus meal,4,paid
+S167,Cafe outing,3,paid
+S167,Movie / mall,4,paid
+S168,Hostel hangout,4,free
+S168,Club / society meeting,3,free
+S168,Sports / recreation,4,free
+S168,Cultural event,3,free
+S168,Campus canteen,2,low_cost
+S168,Fest / campus event,3,low_cost
+S168,Cafe outing,3,paid
+S168,Movie / mall,2,paid
+S168,Trip / travel,4,paid
+S169,Hostel hangout,1,free
+S169,Club / society meeting,1,free
+S169,Sports / recreation,4,free
+S169,Cultural event,2,free
+S169,Campus canteen,1,low_cost
+S169,Cafe outing,1,paid
+S170,Hostel hangout,4,free
+S170,Club / society meeting,3,free
+S170,Cultural event,2,free
+S170,Campus canteen,2,low_cost
+S170,Fest / campus event,2,low_cost
+S170,Off-campus meal,2,paid
+S170,Cafe outing,3,paid
+S171,Sports / recreation,2,free
+S171,Cultural event,4,free
+S171,Off-campus meal,4,paid
+S171,Cafe outing,2,paid
+S171,Movie / mall,2,paid
+S172,Hostel hangout,1,free
+S172,Cultural event,3,free
+S172,Campus canteen,4,low_cost
+S172,Fest / campus event,2,low_cost
+S172,Cafe outing,2,paid
+S173,Hostel hangout,3,free
+S173,Club / society meeting,2,free
+S173,Sports / recreation,1,free
+S173,Cultural event,2,free
+S173,Fest / campus event,4,low_cost
+S173,Off-campus meal,2,paid
+S173,Movie / mall,1,paid
+S173,Trip / travel,3,paid
+S174,Club / society meeting,1,free
+S174,Campus canteen,1,low_cost
+S175,Hostel hangout,2,free
+S175,Club / society meeting,1,free
+S175,Sports / recreation,3,free
+S175,Cultural event,3,free
+S175,Campus canteen,2,low_cost
+S175,Fest / campus event,3,low_cost
+S175,Off-campus meal,4,paid
+S175,Cafe outing,4,paid
+S175,Trip / travel,3,paid
+S176,Club / society meeting,2,free
+S176,Sports / recreation,4,free
+S176,Cultural event,4,free
+S176,Campus canteen,3,low_cost
+S176,Fest / campus event,3,low_cost
+S177,Hostel hangout,3,free
+S177,Club / society meeting,3,free
+S177,Off-campus meal,1,paid
+S178,Hostel hangout,2,free
+S178,Club / society meeting,1,free
+S178,Cultural event,3,free
+S178,Campus canteen,4,low_cost
+S178,Fest / campus event,1,low_cost
+S178,Cafe outing,2,paid
+S178,Movie / mall,3,paid
+S179,Hostel hangout,2,free
+S179,Sports / recreation,1,free
+S179,Fest / campus event,3,low_cost
+S179,Off-campus meal,3,paid
+S179,Trip / travel,2,paid
+S180,Hostel hangout,4,free
+S180,Club / society meeting,3,free
+S180,Sports / recreation,4,free
+S180,Campus canteen,1,low_cost
+S180,Movie / mall,4,paid
+S181,Hostel hangout,4,free
+S181,Club / society meeting,2,free
+S181,Sports / recreation,3,free
+S181,Campus canteen,3,low_cost
+S181,Fest / campus event,4,low_cost
+S181,Off-campus meal,3,paid
+S181,Cafe outing,3,paid
+S181,Movie / mall,3,paid
+S182,Hostel hangout,3,free
+S182,Club / society meeting,1,free
+S182,Cultural event,3,free
+S182,Campus canteen,3,low_cost
+S182,Off-campus meal,3,paid
+S182,Cafe outing,4,paid
+S183,Hostel hangout,3,free
+S183,Club / society meeting,4,free
+S183,Cultural event,3,free
+S183,Campus canteen,2,low_cost
+S183,Fest / campus event,4,low_cost
+S183,Off-campus meal,4,paid
+S183,Cafe outing,2,paid
+S183,Movie / mall,1,paid
+S183,Trip / travel,2,paid
+S184,Hostel hangout,1,free
+S184,Sports / recreation,2,free
+S184,Cultural event,3,free
+S184,Campus canteen,3,low_cost
+S184,Off-campus meal,2,paid
+S184,Cafe outing,4,paid
+S184,Movie / mall,2,paid
+S184,Trip / travel,2,paid
+S185,Club / society meeting,1,free
+S185,Sports / recreation,3,free
+S185,Campus canteen,3,low_cost
+S185,Off-campus meal,2,paid
+S186,Hostel hangout,3,free
+S186,Club / society meeting,1,free
+S186,Sports / recreation,2,free
+S186,Cultural event,1,free
+S186,Campus canteen,3,low_cost
+S186,Fest / campus event,1,low_cost
+S186,Off-campus meal,1,paid
+S186,Cafe outing,4,paid
+S186,Trip / travel,2,paid
+S187,Hostel hangout,2,free
+S187,Campus canteen,1,low_cost
+S187,Fest / campus event,2,low_cost
+S187,Off-campus meal,1,paid
+S187,Cafe outing,4,paid
+S187,Movie / mall,4,paid
+S188,Hostel hangout,3,free
+S188,Club / society meeting,2,free
+S188,Sports / recreation,2,free
+S188,Campus canteen,4,low_cost
+S188,Fest / campus event,4,low_cost
+S188,Off-campus meal,4,paid
+S188,Cafe outing,2,paid
+S188,Movie / mall,1,paid
+S189,Hostel hangout,1,free
+S189,Club / society meeting,1,free
+S189,Cultural event,1,free
+S189,Fest / campus event,2,low_cost
+S189,Off-campus meal,4,paid
+S189,Cafe outing,2,paid
+S189,Movie / mall,4,paid
+S190,Hostel hangout,2,free
+S190,Club / society meeting,3,free
+S190,Cultural event,3,free
+S190,Campus canteen,2,low_cost
+S190,Fest / campus event,4,low_cost
+S190,Off-campus meal,4,paid
+S190,Cafe outing,2,paid
+S190,Trip / travel,1,paid
+S191,Hostel hangout,3,free
+S191,Club / society meeting,1,free
+S191,Sports / recreation,3,free
+S191,Cultural event,2,free
+S191,Campus canteen,4,low_cost
+S191,Fest / campus event,1,low_cost
+S191,Off-campus meal,4,paid
+S191,Cafe outing,4,paid
+S191,Trip / travel,4,paid
+S192,Hostel hangout,3,free
+S192,Sports / recreation,3,free
+S192,Campus canteen,4,low_cost
+S192,Fest / campus event,4,low_cost
+S192,Cafe outing,1,paid
+S192,Movie / mall,2,paid
+S192,Trip / travel,2,paid
+S193,Hostel hangout,3,free
+S193,Club / society meeting,3,free
+S193,Sports / recreation,4,free
+S193,Campus canteen,2,low_cost
+S193,Fest / campus event,1,low_cost
+S193,Off-campus meal,4,paid
+S193,Cafe outing,2,paid
+S193,Movie / mall,4,paid
+S194,Hostel hangout,4,free
+S194,Sports / recreation,2,free
+S194,Campus canteen,1,low_cost
+S194,Fest / campus event,3,low_cost
+S194,Cafe outing,1,paid
+S194,Movie / mall,3,paid
+S194,Trip / travel,4,paid
+S195,Hostel hangout,1,free
+S195,Sports / recreation,3,free
+S195,Cultural event,4,free
+S195,Campus canteen,3,low_cost
+S195,Fest / campus event,2,low_cost
+S195,Off-campus meal,2,paid
+S195,Movie / mall,1,paid
+S196,Club / society meeting,2,free
+S196,Campus canteen,4,low_cost
+S196,Fest / campus event,4,low_cost
+S196,Off-campus meal,1,paid
+S197,Fest / campus event,2,low_cost
+S197,Off-campus meal,4,paid
+S198,Hostel hangout,2,free
+S198,Sports / recreation,2,free
+S198,Cultural event,2,free
+S198,Campus canteen,3,low_cost
+S198,Fest / campus event,1,low_cost
+S198,Off-campus meal,3,paid
+S198,Cafe outing,2,paid
+S198,Movie / mall,4,paid
+S198,Trip / travel,1,paid
+S199,Hostel hangout,4,free
+S199,Club / society meeting,4,free
+S199,Campus canteen,4,low_cost
+S199,Fest / campus event,2,low_cost
+S199,Off-campus meal,3,paid
+S199,Movie / mall,1,paid
+S200,Hostel hangout,2,free
+S200,Sports / recreation,2,free
+S200,Campus canteen,3,low_cost
+S200,Fest / campus event,1,low_cost

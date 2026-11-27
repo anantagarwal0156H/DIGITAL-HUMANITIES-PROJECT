@@ -1,0 +1,206 @@
+{
+  "n": 200,
+  "overall": {
+    "avg_belonging": 3.65,
+    "avg_initial_comfort": 3.07,
+    "avg_current_comfort": 3.79,
+    "avg_adaptation_gain": 0.72,
+    "avg_cost_barrier": 2.92,
+    "avg_context_gap": 3.02
+  },
+  "correlations": {
+    "spending_vs_paid_participation": 0.543,
+    "spending_vs_free_participation": 0.275,
+    "exposure_vs_initial_comfort": 0.624,
+    "context_gap_vs_belonging": -0.608,
+    "free_participation_vs_belonging": 0.491,
+    "paid_participation_vs_belonging": 0.479
+  },
+  "region_summary": {
+    "Metropolitan": {
+      "n": 62,
+      "initial_comfort": 3.61,
+      "current_comfort": 4.37,
+      "belonging": 4.08,
+      "context_gap": 2.79
+    },
+    "Large city": {
+      "n": 47,
+      "initial_comfort": 3.32,
+      "current_comfort": 4.0,
+      "belonging": 3.79,
+      "context_gap": 2.83
+    },
+    "Small town": {
+      "n": 66,
+      "initial_comfort": 2.65,
+      "current_comfort": 3.44,
+      "belonging": 3.39,
+      "context_gap": 3.21
+    },
+    "Rural": {
+      "n": 25,
+      "initial_comfort": 2.36,
+      "current_comfort": 2.88,
+      "belonging": 3.0,
+      "context_gap": 3.48
+    }
+  },
+  "spending_summary": {
+    "1": {
+      "n": 7,
+      "paid_freq": 0.57,
+      "free_freq": 5.57,
+      "belonging": 2.86,
+      "cost_barrier": 4.29
+    },
+    "2": {
+      "n": 43,
+      "paid_freq": 2.33,
+      "free_freq": 4.37,
+      "belonging": 3.19,
+      "cost_barrier": 3.84
+    },
+    "3": {
+      "n": 80,
+      "paid_freq": 4.24,
+      "free_freq": 5.84,
+      "belonging": 3.62,
+      "cost_barrier": 2.99
+    },
+    "4": {
+      "n": 55,
+      "paid_freq": 6.67,
+      "free_freq": 7.0,
+      "belonging": 3.96,
+      "cost_barrier": 2.24
+    },
+    "5": {
+      "n": 15,
+      "paid_freq": 7.4,
+      "free_freq": 6.87,
+      "belonging": 4.33,
+      "cost_barrier": 1.8
+    }
+  },
+  "exposure_summary": {
+    "1": {
+      "n": 13,
+      "initial_comfort": 2.08,
+      "current_comfort": 2.69,
+      "belonging": 2.54
+    },
+    "2": {
+      "n": 44,
+      "initial_comfort": 2.32,
+      "current_comfort": 2.91,
+      "belonging": 2.98
+    },
+    "3": {
+      "n": 69,
+      "initial_comfort": 3.01,
+      "current_comfort": 3.74,
+      "belonging": 3.55
+    },
+    "4": {
+      "n": 61,
+      "initial_comfort": 3.56,
+      "current_comfort": 4.46,
+      "belonging": 4.31
+    },
+    "5": {
+      "n": 13,
+      "initial_comfort": 4.62,
+      "current_comfort": 5.0,
+      "belonging": 4.46
+    }
+  },
+  "year_summary": {
+    "1": {
+      "n": 82,
+      "adaptation_gain": 0.45,
+      "belonging": 3.37,
+      "current_comfort": 3.49
+    },
+    "2": {
+      "n": 52,
+      "adaptation_gain": 0.67,
+      "belonging": 3.58,
+      "current_comfort": 3.65
+    },
+    "3": {
+      "n": 41,
+      "adaptation_gain": 1.07,
+      "belonging": 4.15,
+      "current_comfort": 4.29
+    },
+    "4": {
+      "n": 25,
+      "adaptation_gain": 1.12,
+      "belonging": 3.92,
+      "current_comfort": 4.24
+    }
+  },
+  "activity_summary": [
+    {
+      "activity": "Hostel hangout",
+      "cost_type": "free",
+      "participation_rate": 0.87,
+      "avg_frequency": 1.99
+    },
+    {
+      "activity": "Club / society meeting",
+      "cost_type": "free",
+      "participation_rate": 0.655,
+      "avg_frequency": 1.53
+    },
+    {
+      "activity": "Sports / recreation",
+      "cost_type": "free",
+      "participation_rate": 0.555,
+      "avg_frequency": 1.32
+    },
+    {
+      "activity": "Cultural event",
+      "cost_type": "free",
+      "participation_rate": 0.475,
+      "avg_frequency": 1.07
+    },
+    {
+      "activity": "Campus canteen",
+      "cost_type": "low_cost",
+      "participation_rate": 0.815,
+      "avg_frequency": 1.94
+    },
+    {
+      "activity": "Fest / campus event",
+      "cost_type": "low_cost",
+      "participation_rate": 0.68,
+      "avg_frequency": 1.64
+    },
+    {
+      "activity": "Off-campus meal",
+      "cost_type": "paid",
+      "participation_rate": 0.605,
+      "avg_frequency": 1.45
+    },
+    {
+      "activity": "Cafe outing",
+      "cost_type": "paid",
+      "participation_rate": 0.51,
+      "avg_frequency": 1.26
+    },
+    {
+      "activity": "Movie / mall",
+      "cost_type": "paid",
+      "participation_rate": 0.455,
+      "avg_frequency": 1.09
+    },
+    {
+      "activity": "Trip / travel",
+      "cost_type": "paid",
+      "participation_rate": 0.33,
+      "avg_frequency": 0.81
+    }
+  ]
+}
