@@ -25,6 +25,7 @@ function setupNetwork(students,rawEdges){
   const regionFilter=document.getElementById("regionFilter");
   const yearFilter=document.getElementById("yearFilter");
   const spendFilter=document.getElementById("spendFilter");
+  const centralityMode=document.getElementById("centralityMode");
   const reset=document.getElementById("resetFilters");
   const container=document.getElementById("networkViz");
   const tooltip=d3.select("#tooltip");
@@ -53,11 +54,28 @@ function setupNetwork(students,rawEdges){
     ];
     const links=edges.map(e=>({source:e.source,target:e.target,weight:+e.weight}));
 
+    const centrality=computeCentralities(nodes,links);
+    const mode=centralityMode.value;
+    const values=mode==="force"?null:centrality[mode];
+    const maxValue=values?d3.max(nodes,d=>values.get(d.id)||0)||1:1;
+    const sizeScale=d3.scaleSqrt().domain([0,maxValue]).range([0,1]);
+
+    function radius(d){
+      if(mode==="force") return d.node_type==="activity"?22:4;
+      const t=sizeScale(values.get(d.id)||0);
+      return d.node_type==="activity" ? 13+t*21 : 3.5+t*10.5;
+    }
+
     const sim=d3.forceSimulation(nodes)
       .force("link",d3.forceLink(links).id(d=>d.id).distance(76).strength(.20))
       .force("charge",d3.forceManyBody().strength(d=>d.node_type==="activity"?-320:-25))
       .force("center",d3.forceCenter(width/2,height/2))
-      .force("collide",d3.forceCollide(d=>d.node_type==="activity"?30:5));
+      .force("collide",d3.forceCollide(d=>radius(d)+2));
+
+    if(values){
+      const radialScale=d3.scaleLinear().domain([0,maxValue]).range([Math.min(width,height)*.43,28]);
+      sim.force("centrality",d3.forceRadial(d=>radialScale(values.get(d.id)||0),width/2,height/2).strength(.32));
+    }
 
     const link=svg.append("g").selectAll("line").data(links).join("line")
       .attr("stroke","#bbb").attr("stroke-opacity",.22).attr("stroke-width",d=>.35+d.weight*.25);
@@ -69,29 +87,110 @@ function setupNetwork(students,rawEdges){
         .on("end",(event,d)=>{if(!event.active)sim.alphaTarget(0);if(d.node_type==="student"){d.fx=null;d.fy=null;}}));
 
     node.filter(d=>d.node_type==="student").append("circle")
-      .attr("r",4).attr("fill",d=>regionColors[d.region_type]||"#777").attr("stroke","#fff").attr("stroke-width",.6);
+      .attr("r",d=>radius(d)).attr("fill",d=>regionColors[d.region_type]||"#777").attr("stroke","#fff").attr("stroke-width",.6);
 
     const activity=node.filter(d=>d.node_type==="activity");
-    activity.append("circle").attr("r",22).attr("fill","#fff").attr("stroke","#111").attr("stroke-width",1.4);
-    activity.append("text").attr("x",28).attr("dy",".35em").attr("font-size",10).attr("fill","#111").text(d=>d.label);
+    activity.append("circle").attr("r",d=>radius(d)).attr("fill","#fff").attr("stroke","#111").attr("stroke-width",1.4);
+    activity.append("text").attr("x",d=>radius(d)+6).attr("dy",".35em").attr("font-size",10).attr("fill","#111").text(d=>d.label);
 
     node.on("mousemove",(event,d)=>{
+      const metric=mode==="force" ? "" : `<br>${centralityLabel(mode)}: ${(values.get(d.id)||0).toFixed(3)}`;
       tooltip.style("display","block").style("left",`${event.offsetX+12}px`).style("top",`${event.offsetY+12}px`)
         .html(d.node_type==="student"
-          ? `<b>${d.id}</b><br>${d.region_type}, Year ${d.academic_year}<br>Spending ${d.spending_power_score}/5 · Exposure ${d.precollege_exposure_score}/5<br>Belonging ${d.belonging_score}/5`
-          : `<b>${d.label}</b>`);
+          ? `<b>${d.id}</b><br>${d.region_type}, Year ${d.academic_year}<br>Spending ${d.spending_power_score}/5 · Exposure ${d.precollege_exposure_score}/5<br>Belonging ${d.belonging_score}/5${metric}`
+          : `<b>${d.label}</b>${metric}`);
     }).on("mouseleave",()=>tooltip.style("display","none"));
 
     sim.on("tick",()=>{
-      nodes.forEach(d=>{d.x=Math.max(28,Math.min(width-160,d.x||width/2));d.y=Math.max(28,Math.min(height-28,d.y||height/2));});
+      nodes.forEach(d=>{const r=radius(d)+4;d.x=Math.max(r,Math.min(width-170,d.x||width/2));d.y=Math.max(r,Math.min(height-r,d.y||height/2));});
       link.attr("x1",d=>d.source.x).attr("y1",d=>d.source.y).attr("x2",d=>d.target.x).attr("y2",d=>d.target.y);
       node.attr("transform",d=>`translate(${d.x},${d.y})`);
     });
   }
-  [regionFilter,yearFilter,spendFilter].forEach(el=>el.addEventListener("change",draw));
-  reset.addEventListener("click",()=>{regionFilter.value="all";yearFilter.value="all";spendFilter.value="all";draw();});
+
+  [regionFilter,yearFilter,spendFilter,centralityMode].forEach(el=>el.addEventListener("change",draw));
+  reset.addEventListener("click",()=>{
+    regionFilter.value="all";
+    yearFilter.value="all";
+    spendFilter.value="all";
+    centralityMode.value="force";
+    draw();
+  });
   draw();
   window.addEventListener("resize",debounce(draw,180));
+}
+
+function centralityLabel(mode){
+  return mode.charAt(0).toUpperCase()+mode.slice(1)+" centrality";
+}
+
+function computeCentralities(nodes,links){
+  const ids=nodes.map(d=>d.id);
+  const adjacency=new Map(ids.map(id=>[id,[]]));
+  links.forEach(l=>{
+    const a=typeof l.source==="object"?l.source.id:l.source;
+    const b=typeof l.target==="object"?l.target.id:l.target;
+    if(adjacency.has(a)&&adjacency.has(b)){
+      adjacency.get(a).push(b);
+      adjacency.get(b).push(a);
+    }
+  });
+
+  const n=ids.length;
+  const degree=new Map(ids.map(id=>[id,n>1?adjacency.get(id).length/(n-1):0]));
+  const betweenness=new Map(ids.map(id=>[id,0]));
+  const closeness=new Map(ids.map(id=>[id,0]));
+
+  for(const s of ids){
+    const stack=[];
+    const predecessors=new Map(ids.map(id=>[id,[]]));
+    const sigma=new Map(ids.map(id=>[id,0]));
+    const distance=new Map(ids.map(id=>[id,-1]));
+    sigma.set(s,1);
+    distance.set(s,0);
+    const queue=[s];
+    let q=0;
+
+    while(q<queue.length){
+      const v=queue[q++];
+      stack.push(v);
+      for(const w of adjacency.get(v)){
+        if(distance.get(w)<0){
+          distance.set(w,distance.get(v)+1);
+          queue.push(w);
+        }
+        if(distance.get(w)===distance.get(v)+1){
+          sigma.set(w,sigma.get(w)+sigma.get(v));
+          predecessors.get(w).push(v);
+        }
+      }
+    }
+
+    let reachable=0;
+    let distanceSum=0;
+    for(const id of ids){
+      const dist=distance.get(id);
+      if(dist>=0){
+        reachable++;
+        distanceSum+=dist;
+      }
+    }
+    if(reachable>1&&distanceSum>0) closeness.set(s,(reachable-1)/distanceSum);
+
+    const delta=new Map(ids.map(id=>[id,0]));
+    while(stack.length){
+      const w=stack.pop();
+      for(const v of predecessors.get(w)){
+        const sigmaW=sigma.get(w);
+        if(sigmaW>0) delta.set(v,delta.get(v)+(sigma.get(v)/sigmaW)*(1+delta.get(w)));
+      }
+      if(w!==s) betweenness.set(w,betweenness.get(w)+delta.get(w));
+    }
+  }
+
+  const norm=n>2?((n-1)*(n-2))/2:1;
+  for(const id of ids) betweenness.set(id,(betweenness.get(id)/2)/norm);
+  return {degree,betweenness,closeness};
 }
 
 function renderSpendingChart(summary){

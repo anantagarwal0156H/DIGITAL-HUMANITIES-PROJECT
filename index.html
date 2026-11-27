@@ -34,6 +34,14 @@
     <label>Spending score
       <select id="spendFilter"><option value="all">All</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option></select>
     </label>
+    <label>Network view
+      <select id="centralityMode">
+        <option value="force">Force layout</option>
+        <option value="degree">Degree centrality</option>
+        <option value="betweenness">Betweenness centrality</option>
+        <option value="closeness">Closeness centrality</option>
+      </select>
+    </label>
     <button id="resetFilters">Reset</button>
     <div class="meta"><span id="visibleCount">0</span> students shown</div>
   </div>
