@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Digital Humanities Project — Graphs</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+</head>
+<body data-page="graphs">
+<header>
+  <div class="header-row">
+    <div>
+      <h1>Digital Humanities Project</h1>
+      <p class="members">
+        NAME 1 — ID 1<br>
+        NAME 2 — ID 2<br>
+        NAME 3 — ID 3
+      </p>
+    </div>
+    <nav><a href="index.html">Network</a><a class="active" href="graphs.html">Graphs</a></nav>
+  </div>
+</header>
+<main>
+  <div class="graphs">
+    <section class="figure"><h2>Spending power and participation</h2><p>Average activity frequency by spending-power score.</p><div id="spendingChart" class="chart"></div></section>
+    <section class="figure"><h2>Prior exposure and social comfort</h2><p>Initial and current social comfort by exposure score.</p><div id="exposureChart" class="chart"></div></section>
+    <section class="figure full"><h2>Regional context</h2><p>Initial comfort, current comfort and belonging by region type.</p><div id="regionChart" class="chart large"></div></section>
+    <section class="figure"><h2>Academic year</h2><p>Adaptation gain and belonging by academic year.</p><div id="yearChart" class="chart"></div></section>
+    <section class="figure"><h2>Participation by activity</h2><p>Share of students participating in each activity.</p><div id="activityChart" class="chart"></div></section>
+  </div>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
