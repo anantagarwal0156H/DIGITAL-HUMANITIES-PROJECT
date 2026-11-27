@@ -49,3 +49,20 @@ button{cursor:pointer}
   .graphs{grid-template-columns:1fr}
   .figure.full{grid-column:auto}
 }
+
+.network-context {
+  max-width: 1000px;
+  margin-bottom: 24px;
+  line-height: 1.55;
+}
+
+.network-context h2 {
+  font-size: 19px;
+  margin: 0 0 10px 0;
+}
+
+.network-context p {
+  font-size: 14px;
+  margin: 0 0 10px 0;
+  max-width: 950px;
+}
